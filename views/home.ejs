@@ -56,9 +56,12 @@
         </ul>
         <!-- list section ends here -->
 
+        <% if(locals.user){ %>
+        <!-- download button -->
         <a href="/get-csv" id="csv-btn">
         <button ><i class="fa-solid fa-arrow-circle-down "></i> Download</button>
         </a>
+        <% } %>
     
     </div>       
 </section>
