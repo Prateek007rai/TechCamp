@@ -1,0 +1,38 @@
+<header>
+    <h1><i class="fa-solid fa-blog"></i> TechCamp</h1>
+
+      <ul>
+        <% if(locals.user){ %>
+            <li id="nav-bar">
+                <a href="/">
+                    <i class="fa-solid fa-arrow-left"></i> 
+                </a>
+            </li>
+            
+            <li id="nav-bar">
+                <a href="/users/add">
+                    Add Student
+                </a>
+            </li>
+        
+            <li id="com-sign">
+                <a href="/users/Sign-Out">Sign Out</a>
+            </li>
+
+        <% } else { %>
+            <li id="nav-bar">
+                <a href="/">
+                    <i class="fa-solid fa-arrow-left"></i> 
+                </a>
+            </li>
+            <li id="com-sign">
+                <a href="/users/Sign-In">Sign In</a>
+            </li>
+            <li id="com-sign">
+                <a href="/users/Sign-Up">Sign Up</a>
+            </li>
+                 
+        <% } %>
+      </ul>
+
+</header>

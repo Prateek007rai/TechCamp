@@ -1,0 +1,54 @@
+main {
+  display: flex; }
+  main .main::-webkit-scrollbar {
+    display: none; }
+  main #display {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh; }
+    main #display #students-list-container h2 {
+      text-align: center;
+      font-size: 40px;
+      color: #040477;
+      padding: 0; }
+    main #display #students-list-container ul {
+      margin-bottom: 40px; }
+      main #display #students-list-container ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0%; }
+      main #display #students-list-container ul table {
+        border: 2px solid #dddddd;
+        padding: 12px;
+        margin-left: -10px;
+        border-radius: 5px; }
+      main #display #students-list-container ul tr th {
+        font-size: 22px;
+        text-align: center;
+        padding: 8px;
+        color: #c63333; }
+      main #display #students-list-container ul tr td {
+        font-size: 13px;
+        text-align: center;
+        color: #555454;
+        word-wrap: break-word; }
+      main #display #students-list-container ul tr #del i {
+        color: #f41313;
+        margin-left: 15px; }
+        main #display #students-list-container ul tr #del i:hover {
+          color: #6dade6; }
+    main #display #students-list-container #csv-btn {
+      margin-left: 50px; }
+      main #display #students-list-container #csv-btn button {
+        padding: 7px;
+        width: 8rem;
+        background-color: #2b7b2e;
+        border-width: 0;
+        color: white;
+        border-radius: 3px; }
+        main #display #students-list-container #csv-btn button i {
+          margin-right: 3px; }
+        main #display #students-list-container #csv-btn button:hover {
+          box-shadow: 0px 0px 2px 1px #797676;
+          border: 1px solid white;
+          opacity: 0.8; }

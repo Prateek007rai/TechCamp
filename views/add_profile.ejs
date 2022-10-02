@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/add_profile.css">
+
+<!-- entry section starts here -->
+<section id="student-entry">
+   
+    <h4>New Student Entry</h4>
+    <!-- student entry form used by employees  -->
+    <form action="/student/create" method="POST">
+        <div id="name-div"><label for="name">Student Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter Student Name ..." requird /></div>
+
+        <div id="age-div"><label for="age">Age :</label>
+            <input type="number" name="age" id="age" min="18" step="1" placeholder="Enter Student Age..." /></div>
+    
+        <div id="email-div"><label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Enter Student Email ..." requird /></div>
+    
+        <div id="college-div"><label for="country">College :</label>
+        <input type="text" name="college" id="college" placeholder="Enter Student College Name ..." requird /></div>
+    
+        <div id="Batch-div"><label for="Batch">Batch :</label>
+        <input type="text" name="Batch" id="Batch" placeholder="Batch Year" requird /></div>
+
+        <div id="dscore-div"><label for="dscore">DSA Final Score:</label>
+            <input type="number" name="dscore" id="dscore" step="1" placeholder="enter marks"/></div>
+
+        <div id="wscore-div"><label for="wscore">WebD Final Score:</label>
+            <input type="number" name="wscore" id="wscore"  step="1" placeholder="enter marks"/></div>
+        
+        <div id="rscore-div"><label for="rscore">React Final Score:</label>
+            <input type="number" name="rscore" id="rscore" step="1" placeholder="enter marks"/></div>        
+    
+        <div id="interview-div"><label for="age">Interviews:</label>
+            <input type="text" name="interview" id="interview" placeholder="Company name , DD/MM/YYYY"/></div>
+
+        <div id="status-div"><label for="status">Status :</label>
+            <select name="status" id="status">
+                <option value="placed">Placed</option>
+                <option value="notPlaced">Not Placed</option>
+            </select>
+             
+                
+        <label for="result">Result :</label>
+        <!-- <input type="text" name="result" id="result"  placeholder="Confirm Password .." requird /></div> -->
+        <select name="result" id="result">
+            <option value="Pass">Pass</option>
+            <option value="Fail">Fail</option>
+            <option value="Hold">On Hold</option>
+            <option value="notAttempt">Did not Attempt</option>
+        </select>
+        </div>
+
+        <button type="submit" value="Add">Add</button>
+    </form>
+</section>

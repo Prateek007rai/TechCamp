@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    .main::-webkit-scrollbar {
+        display: none;
+      }
+    #display{
+        width:100vw;
+        height: fit-content;
+        min-height: 100vh;
+        
+
+       #students-list-container{
+            
+           
+            //student table header
+            h2{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(4, 4, 119);
+            padding: 0;
+            }
+            ul{
+                margin-bottom: 40px;
+               li{
+                list-style: none;
+                margin: 0;
+                padding: 0%;
+                }
+                table{
+                    border: 2px solid rgb(221, 221, 221) ;
+                    padding: 12px;
+                    margin-left: -10px;
+                    border-radius: 5px;
+                }
+                tr{
+                    // details heading 
+                    
+                    th{
+                        font-size: 22px;
+                        text-align: center;
+                        padding: 8px;
+                        color: #c63333;
+                    }
+                    // student details
+                    td{
+                        font-size: 13px;
+                        text-align: center;
+                        color: rgb(85, 84, 84);
+                        word-wrap: break-word;
+                    }
+                    #del{
+                        i{
+                            color: rgb(244, 19, 19);
+                            margin-left: 15px;
+                            &:hover{
+                                color: rgb(109, 173, 230);
+                            }
+                        }
+                    }
+                }
+            }
+
+        //    download button CSS
+
+            #csv-btn{
+                margin-left: 50px;
+                
+                button{
+                    padding: 7px;
+                    width: 8rem;
+                    background-color: #2b7b2e;
+                    border-width: 0;
+                    color: white;
+                    border-radius: 3px;
+                    i{
+                        margin-right: 3px;
+                    }
+                    &:hover{
+                        box-shadow: 0px 0px 2px 1px rgb(121, 118, 118);
+                        border: 1px solid white;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+

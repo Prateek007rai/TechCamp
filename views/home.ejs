@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+
+
+<!-- list of students displays here -->
+<!-- this students [array of students] came from home controller directly -->
+<section id="display">    
+    <div id="students-list-container">
+        <h2>Student List</h2>
+        <!-- list section starts -->
+        <ul>
+            <!-- table form starts here -->
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>College</th>
+                  <th>DSA Marks</th>
+                  <th>WebD Marks</th>
+                  <th>React Marks</th>
+                  <th>Interview</th>
+                  <th>Status</th>
+                  <th>Result</th>
+                </tr>
+            <% for(student of students){ %>
+            <tr>
+            <li>  
+                
+            <div id="full-details">
+              <td>  <%= student.name %> </td>
+              <td>  <%= student.age %>  </td>
+               <td> <%= student.email %> </td>
+               <td> <%= student.college %> </td>
+               <td><%= student.dscore%> </td>
+               <td><%= student.wscore %> </td>
+               <td><%= student.rscore %> </td>
+               <td><%= student.interview %> </td>
+               <td><%= student.status %> </td>
+                <td><%= student.result %> </td>
+                <td id="del">
+                <% if(locals.user){ %>
+                    
+                    <a class="delete-post-button" href="/student/destroy/<%= student.id %>"><i class="fa-regular fa-trash-alt "></i></a>
+                    
+                <% } %>
+                </td>
+            </div>
+
+            </li>
+            </tr>
+                
+            <% } %>
+        </table>
+        </ul>
+        <!-- list section ends here -->
+
+        <a href="/get-csv" id="csv-btn">
+        <button ><i class="fa-solid fa-arrow-circle-down "></i> Download</button>
+        </a>
+    
+    </div>       
+</section>
+
+
+
+
+

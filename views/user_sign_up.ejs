@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/user_sign_up.css">
+<h2>Employee <br> Sign-Up</h2>
+
+<form action="/users/create" method="POST">
+        <div id="name-div"><label for="name">Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name ..." requird /></div>
+
+        <div id="age-div"><label for="age">Age :</label>
+            <input type="number" name="age" id="age" min="18" step="1" placeholder="Must be greater than 18"/></div>
+    
+        <div id="email-div"><label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email ..." requird /></div>
+    
+        <div id="country-div"><label for="country">Country :</label>
+        <input type="text" name="country" id="country" placeholder="Enter your Country Name ..." requird /></div>
+    
+        <div id="password-div"><label for="password">Password :</label>
+        <input type="password" name="password" id="password" placeholder="Password ..." requird /></div>
+    
+    
+        <div><label for="confirm_password">Confirm Password :</label>
+        <input type="password" name="confirm_password" id="confirm_password"  placeholder="Confirm Password .." requird /></div>
+    
+        <button type="submit" value="Sign Up">Sign-Up</button>
+</form>
